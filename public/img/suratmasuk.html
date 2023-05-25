@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link href="dashboard.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+
+        <ul>
+          <li><a href="http://127.0.0.1:5500/dashboard.html#">Dashboard</a></li>
+          <li><a href="" class="active">Surat masuk</a></li>
+          <li>
+            <a href="http://127.0.0.1:5500/suratkeluar.html">Surat keluar</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/kategorisurat.html"
+              >Kategoori Surat</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="navbar-1">
+          <img src="profile.png" alt="Profile Picture" class="img-profile" />
+          <h2 class="h2-1">Selamat Datang</h2>
+        </div>
+        <div class="chart-container">
+          <canvas id="suratChart"> </canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

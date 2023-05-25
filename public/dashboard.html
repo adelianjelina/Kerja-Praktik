@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <link href="dashboard.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+
+        <ul>
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li>
+            <a href="http://127.0.0.1:5500/suratmasuk.html#">Surat masuk</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/suratkeluar.html">Surat keluar</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/kategorisurat.html"
+              >Kategori Surat</a
+            >
+          </li>
+        </ul>
+        <div class="footer1"><p class="p1"></p></div>
+      </div>
+
+      <div class="content">
+        <div class="navbar-1">
+          <img src="profile.png" alt="Profile Picture" class="img-profile" />
+          <h2 class="h2-1">Selamat Datang</h2>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <a href="http://127.0.0.1:5500/dashboard.html">
+              <img src="surat keluar.png" class="img-sm1" />
+            </a>
+            <h3>Total Surat keluar</h3>
+            <p id="totalSurat">100</p>
+          </div>
+          <div class="card1">
+            <img src="surat masuk.png" class="img-sm" />
+            <h3 class="h3-sm">Total Surat masuk</h3>
+            <p id="totalSurat">100</p>
+          </div>
+          <div class="card2">
+            <div class="peng">
+              <h1 id="totalSurat">4</h1>
+              <h3>Pengguna</h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 class="h1chart">Grafik Surat Masuk & Keluar Per Bulan</h1>
+        </div>
+
+        <div class="chart-container">
+          <div class="d1"></div>
+          <div class="d2"></div>
+          <div class="d3"></div>
+          <div class="d4"></div>
+          <div class="d5"></div>
+          <div class="d6"></div>
+          <div class="d7"></div>
+          <div class="d8"></div>
+          <div class="d9"></div>
+          <div class="d10"></div>
+          <div class="d11"></div>
+          <div class="d12"></div>
+          <ul class="contentchart">
+            <li><div>10</div></li>
+            <li><div>20</div></li>
+            <li><div>30</div></li>
+            <li><div>40</div></li>
+            <li><div>50</div></li>
+          </ul>
+          <div class="bulan"><p>januari</p></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

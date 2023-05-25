@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+.logo {
+  background-color: #eaff00;
+  width: auto;
+  justify-content: space-between;
+}
+.navbar-1 {
+  background-color: #333;
+  width: auto;
+  height: 100px;
+  position: relative;
+}
+.img-profile {
+  width: 80px;
+  height: auto;
+  float: right;
+  padding: 16px;
+  size: 10px;
+}
+.h2-1 {
+  color: white;
+  padding: 35px;
+}
+.sidebar {
+  flex: 0 0 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 130vh;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+  width: 100px;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar .profile img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.sidebar h3,
+.sidebar p {
+  margin: 0;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #555;
+}
+
+.sidebar li a:hover {
+  background-color: #777;
+}
+
+.sidebar li a.active {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #7bb1ad;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 300px;
+  height: auto;
+}
+.card1 {
+  background-color: #8ece94;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 300px;
+  height: auto;
+}
+.card2 {
+  background-color: #e1d77a;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 300px;
+  height: auto;
+}
+
+.table-container {
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  height: 400px;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+.p1 {
+  padding: 10px;
+  width: 40px;
+}
+.logo-sm {
+  width: 100px;
+  height: auto;
+}
+.img-sm {
+  width: 80px;
+  height: auto;
+  margin-top: 20px;
+  padding: -60px;
+}
+.img-sm1 {
+  width: 50px;
+  height: auto;
+  margin-top: 30px;
+}
+.h3-sm {
+  margin-top: -13px;
+}
+.peng {
+  align-items: center;
+  float: center;
+  padding-top: 40px;
+}
+/* chart css */
+.h1chart {
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin-left: 200px;
+}
+.chart-container {
+  width: 900px;
+  height: 450px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 10% auto 0;
+  position: relative;
+  z-index: 0;
+  background-color: #f2f2f2;
+  margin-top: -20px;
+}
+.contentchart {
+  position: relative;
+  margin: 3% auto 0;
+  width: 900px;
+  height: 50px;
+  z-index: 100;
+}
+.content li {
+  position: relative;
+  list-style: none;
+  right: 40px;
+  height: 80px;
+  border-bottom: solid 2px black;
+}
+.content li:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -10px;
+  transform: skewY(45deg);
+  width: 30px;
+  height: 100%;
+  border-bottom: 1px solid black;
+}
+
+.content li dev {
+  font-size: 10px;
+  width: 100px;
+  right: 50px;
+  padding-top: 50px;
+}
+
+.bulan {
+  margin-top: 400px;
+  margin-left: 30px;
+}
+
+.d1 {
+  position: absolute;
+  height: 200px;
+  width: 50px;
+  background-color: rgb(255, 234, 0);
+  bottom: 0px;
+  left: 25px;
+  z-index: 500;
+}
+
+.d2 {
+  position: absolute;
+  height: 300px;
+  width: 50px;
+  background-color: rgb(187, 255, 0);
+  bottom: 0px;
+  left: 75px;
+  z-index: 500;
+}
+.d3 {
+  position: absolute;
+  height: 200px;
+  width: 50px;
+  background-color: rgb(0, 0, 0);
+  bottom: 0px;
+  left: 125px;
+  z-index: 500;
+}
+.d4 {
+  position: absolute;
+  height: 300px;
+  width: 50px;
+  background-color: rgb(187, 255, 0);
+  bottom: 0px;
+  left: 175px;
+  z-index: 500;
+}
+.d5 {
+  position: absolute;
+  height: 200px;
+  width: 50px;
+  background-color: rgb(0, 0, 0);
+  bottom: 0px;
+  left: 225px;
+  z-index: 500;
+}
