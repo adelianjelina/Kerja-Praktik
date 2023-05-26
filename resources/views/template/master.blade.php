@@ -69,6 +69,15 @@
                                 </p>
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('surat-keluar.index') }}"
+                                class="nav-link {{ request()->is('surat-keluar*') ? 'active' : '' }}">
+                                <p>
+                                    Surat Keluar
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

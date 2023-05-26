@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class SuratKeluar extends Model
 {
     use HasFactory;
+        protected $guarded = [];
+
+
+    public function klasifikasi()
+    {
+        return $this->belongsTo(Klasifikasi::class, 'klasifikasi_id');
+    }
 }
+
