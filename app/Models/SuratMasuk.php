@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class SuratMasuk extends Model
 {
     use HasFactory;
-    protected $table ='surat_masuks';
-
     protected $guarded = [];
+
+
+    public function klasifikasi()
+    {
+        return $this->belongsTo(Klasifikasi::class, 'klasifikasi_id');
+    }
 }

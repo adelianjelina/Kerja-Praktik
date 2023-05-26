@@ -2,42 +2,84 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Models\SuratKeluar;
 use Illuminate\Http\Request;
 
 class SuratKeluarController extends Controller
 {
-     public function index(){
-        $data = SuratKeluar::all();
-        return view('suratkeluar',compact('data'));
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
     }
-     public function tambahkeluar(){
-        return view('tambahkeluar');
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
     }
-    public function insertdata1(Request $request){
-        // dd($request->all());
-        SuratKeluar::create($request->all());
-        return redirect() ->route('suratkeluar'); 
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
     }
-     public function tampilkandatakeluar ($id){
-        $data=SuratKeluar::find($id);
-        // dd($data);
-        return view('tampildataKeluar', compact(('data')));
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\SuratKeluar  $suratKeluar
+     * @return \Illuminate\Http\Response
+     */
+    public function show(SuratKeluar $suratKeluar)
+    {
+        //
     }
-     public function updatekeluar(Request $request, $id) {
-        $data = SuratKeluar::find($id);
-        $data->update($request->all());
-         return redirect() ->route('suratkeluar')->with('succes','data berhasil diupdate'); 
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\SuratKeluar  $suratKeluar
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(SuratKeluar $suratKeluar)
+    {
+        //
     }
-     public function tampilkeluar ($id){
-        $data=SuratKeluar::find($id);
-        // dd($data);
-        return view('tampilkeluar', compact(('data')));
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\SuratKeluar  $suratKeluar
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, SuratKeluar $suratKeluar)
+    {
+        //
     }
-    public function delete1($id){
-        $data = SuratKeluar::find($id);
-        $data->delete();
-        return redirect()->route('suratkeluar')->with('succes','Data Berhasil di hapus');
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\SuratKeluar  $suratKeluar
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(SuratKeluar $suratKeluar)
+    {
+        //
     }
 }
